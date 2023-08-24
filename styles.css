@@ -1,0 +1,88 @@
+body {
+    background-color: #76abb4;
+  }
+  
+  .map-container {
+    width: 400px;
+    border: 5px solid #ccc;
+    margin: 20px;
+    overflow: hidden; /* Evita que el mapa sobresalga del contenedor */
+  }
+  
+  svg {
+    width: 100%;
+    height: auto;
+  }
+  
+  #info-container {
+    background-color: white;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  path {
+    fill: #e0e0e0;
+    stroke: #888;
+    stroke-width: 5;
+    cursor: pointer;
+  }
+  
+  path.active {
+    fill: rgb(210, 215, 41);
+  }
+  
+/* Estilos para la tabla */
+#sortedProvinces {
+  display: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin: 10px auto;
+  max-width: 30%;
+  background-color: #f9f9f9;
+  font-size: 14px;
+}
+
+.sorted-province {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Estilos para pantalla pequeña */
+@media screen and (max-width: 900px) {
+  #sortedProvinces {
+    max-width: 100%;
+    margin: 5px;
+  }
+
+  .sorted-province {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px 0;
+  }
+
+  .sorted-province h3,
+  .sorted-province p {
+    margin: 3px 0;
+  }
+}
+
+/* Estilo para el fondo de la página */
+body {
+  background-image: url(./img/arg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Estilo para el contenedor de la información de la provincia */
+#info-container {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+  box-shadow: 0px 0px 10px rgba(205, 107, 107, 0.3); /* Sombra suave */
+}
