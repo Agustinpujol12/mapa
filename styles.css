@@ -1,43 +1,42 @@
 body {
-    background-color: #76abb4;
-  }
-  
-  .map-container {
-    width: 400px;
-    border: 5px solid #ccc;
-    margin: 20px;
-    overflow: hidden; /* Evita que el mapa sobresalga del contenedor */
-  }
-  
-  svg {
-    width: 100%;
-    height: auto;
-  }
-  
-  #info-container {
-    background-color: white;
-    padding: 20px;
-    height: 100%;
-  }
-  
-  path {
-    fill: #e0e0e0;
-    stroke: #888;
-    stroke-width: 5;
-    cursor: pointer;
-  }
-  
-  path.active {
-    fill: rgb(210, 215, 41);
-  }
-  
+  background-color: #76abb4;
+}
+
+.map-container {
+  width: 400px;
+  margin: 20px;
+  overflow: hidden; /* Evita que el mapa sobresalga del contenedor */
+}
+
+svg {
+  width: 100%;
+  height: auto;
+}
+
+#info-container {
+  background-color: white;
+  padding: 20px;
+  height: 100%;
+}
+
+path {
+  fill: #e0e0e0;
+  stroke: #888;
+  stroke-width: 5;
+  cursor: pointer;
+}
+
+path.active {
+  fill: rgb(210, 215, 41);
+}
+
 /* Estilos para la tabla */
 #sortedProvinces {
   display: none;
   border: 1px solid #ccc;
   padding: 5px;
   margin: 10px auto;
-  max-width: 30%;
+  max-width: 100%;
   background-color: #f9f9f9;
   font-size: 14px;
 }
@@ -80,9 +79,100 @@ body {
 
 /* Estilo para el contenedor de la información de la provincia */
 #info-container {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
   padding: 20px;
   border-radius: 10px;
-  width: 70%;
+  width: 100%; /* Ajusta el ancho al 100% */
+  max-width: 100%; /* Establece el ancho máximo */
   box-shadow: 0px 0px 10px rgba(205, 107, 107, 0.3); /* Sombra suave */
+}
+
+.table-container {
+  max-height: 400px; /* Altura máxima del contenedor */
+  overflow-y: auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
+  border: 1px solid #ddd; /* Agregar un borde al contenedor */
+  border-radius: 10px; /* Añadir esquinas redondeadas al contenedor */
+  padding: 10px; /* Espaciado interno */
+  margin-top: 20px; /* Margen superior */
+  display: flex; /* Usamos flexbox para centrar verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+
+/* Estilo para la tabla dentro del contenedor */
+.table-container table {
+  width: 100%; /* Ocupar todo el ancho disponible */
+  border-collapse: collapse; /* Colapsar los bordes de las celdas */
+}
+
+/* Estilo para las celdas de la tabla */
+.table-container td,
+.table-container th {
+  padding: 8px; /* Espaciado interno de las celdas */
+  border: 1px solid #ddd; /* Agregar bordes a las celdas */
+}
+
+/* Estilos para las columnas */
+.col-lg-4 {
+  padding: 10px;
+}
+
+/* Ajustar tamaños en pantallas pequeñas */
+@media screen and (max-width: 1200px) {
+  .col-lg-4 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Estilo para los botones de ordenamiento */
+.sort-buttons {
+  margin-top: 10px;
+}
+
+/* Estilo específico para los botones */
+.btn-primary {
+  margin-right: 5px;
+}
+/* Ajustar tamaños en pantallas medianas */
+@media screen and (max-width: 992px) {
+  .col-md-4 {
+    width: 33.33%; /* Mantener tres columnas en pantallas medianas */
+    padding: 10px;
+  }
+}
+
+/* Ajustar tamaños en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .col-sm-4 {
+    width: 50%; /* Mantener dos columnas en pantallas pequeñas */
+    padding: 10px;
+  }
+}
+/* Centrar el título en dispositivos pequeños y medianos */
+#info-container h2 {
+  text-align: center;
+}
+
+/* Estilo para los botones de ordenamiento */
+.sort-buttons {
+  margin-top: 10px;
+  text-align: center; /* Centrar los botones */
+}
+.province-box {
+  text-align: center; /* Centrar el contenido */
+  padding: 10px;
+}
+
+.province-box img {
+  max-width: 100%; /* Asegurar que la imagen no sobrepase su contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+}
+
+.province-box h2 {
+  margin-top: 10px;
+}
+
+.province-box p {
+  margin: 5px 0;
 }
