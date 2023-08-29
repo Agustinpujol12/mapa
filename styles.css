@@ -35,10 +35,10 @@ path.active {
   display: none;
   border: 1px solid #ccc;
   padding: 5px;
-  margin: 10px auto;
+  margin: 40px auto;
   max-width: 100%;
-  background-color: #f9f9f9;
   font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .sorted-province {
@@ -79,17 +79,17 @@ body {
 
 /* Estilo para el contenedor de la información de la provincia */
 #info-container {
-  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
   padding: 20px;
   border-radius: 10px;
   width: 100%; /* Ajusta el ancho al 100% */
   max-width: 100%; /* Establece el ancho máximo */
-  box-shadow: 0px 0px 10px rgba(205, 107, 107, 0.3); /* Sombra suave */
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombra suave */
 }
 
 .table-container {
   max-height: 400px; /* Altura máxima del contenedor */
-  overflow-y: auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
+  overflow-y:auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
   border: 1px solid #ddd; /* Agregar un borde al contenedor */
   border-radius: 10px; /* Añadir esquinas redondeadas al contenedor */
   padding: 10px; /* Espaciado interno */

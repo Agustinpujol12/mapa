@@ -8,6 +8,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const sortedProvinces = document.getElementById("sortedProvinces");
 
   var provincesData = JSON.parse(localStorage.getItem("provincesData"));
+  
+  // INFORMACION DE LAS PROVINCIAS
 
   if (!provincesData) {
     provincesData = [
@@ -16,16 +18,14 @@ document.addEventListener("DOMContentLoaded", function () {
         capital: "Córdoba",
         population: "3,308,876",
         area: "165,321 km²",
-        description:
-          "Córdoba es una provincia en el centro de Argentina, conocida por su rica historia, paisajes variados y cultura diversa.",
+        description:"Córdoba es una provincia en el centro de Argentina, conocida por su rica historia, paisajes variados y cultura diversa.",
       },
       {
         name: "Santa Fe",
         capital: "Santa Fe",
         population: "3,194,537",
         area: "133,007 km²",
-        description:
-          "Santa Fe es una provincia en el litoral de Argentina, conocida por su río Paraná y su importancia en la producción agrícola.",
+        description:"Santa Fe es una provincia en el litoral de Argentina, conocida por su río Paraná y su importancia en la producción agrícola.",
       },
       {
         name: "Buenos Aires",
@@ -209,7 +209,8 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("provincesData", JSON.stringify(provincesData));
   }
 
-  // Agrega el código de los botones y la función displaySortedProvinces aquí
+  // CREACION DE TABLA POR ORDEN DE POBLACION Y AREA
+
   sortByPopulationBtn.addEventListener("click", () => {
     const sortedByPopulation = provincesData.slice().sort((a, b) => {
       return (
@@ -244,7 +245,11 @@ document.addEventListener("DOMContentLoaded", function () {
     sortedProvincesContainer.innerHTML = sortedHTML;
   }
 
+  // FLICKR - API 
+
   const flickrApiKey = "a26984b694e49602b82d26167508bd46";
+
+  // EVENTO QUE MANEJA CLICKS EN LAS PROVINCIAS
 
   provinces.forEach((province) => {
     province.addEventListener("click", async () => {
@@ -269,10 +274,10 @@ document.addEventListener("DOMContentLoaded", function () {
             const photo = data.photos.photo[0];
             const imageUrl = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;
 
-            // Mostrar la imagen en el elemento HTML deseado
+            // Muestra la imagen en el elemento HTML deseado
             const imageElement = `<img src="${imageUrl}" alt="${selectedProvince.name}">`;
 
-            // Crear un cuadro para mostrar la imagen y la información
+            // Crea un cuadro para mostrar la imagen y la información
             const provinceBoxHTML = `
               <div class="province-box">
                 <h2>${selectedProvince.name}</h2>
@@ -292,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function () {
           console.error("Error al obtener imágenes de Flickr:", error);
           provinceInfo.innerHTML = `<h2>${selectedProvince.name}</h2><p>Error al cargar imágenes.</p>`;
         }
-        // Mostrar una notificación de SweetAlert
+        // MOSTRAR SWEET ALERT
         Swal.fire({
           icon: "success",
           title: `Has seleccionado la provincia de ${selectedProvince.name}`,
@@ -307,9 +312,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  var isTableHidden = true; // Cambiamos el valor inicial a true
+  var isTableHidden = true; 
 
-  // Cambiar el texto del botón al arrancar la página
+  // CAMBIA EL TEXTO DEL BOTON 
+
   toggleTableButtonText();
 
   // Función para alternar entre mostrar y ocultar la tabla
