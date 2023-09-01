@@ -176,3 +176,72 @@ body {
 .province-box p {
   margin: 5px 0;
 }
+
+
+
+
+
+
+
+/* Estilos para la sección de turismo */
+.tourism-section {
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
+  padding: 20px;
+  margin: 20px auto; /* Centrado al medio y margen con lo de arriba */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tourism-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tourism-entry img {
+  width: 700px; /* Ancho mayor para las imágenes */
+  height: auto; /* La altura se ajustará automáticamente según el aspecto original */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.tourism-entry .description {
+  margin-top: 10px;
+}
+
+/* Estilos para la sección de información de la provincia */
+.province-info {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* Estilos para los botones */
+.btn {
+  padding: 8px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

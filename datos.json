@@ -1,0 +1,231 @@
+[
+    {
+    "name": "Córdoba",
+    "capital": "Córdoba",
+    "population": "3,308,876",
+    "area": "165,321 km²",
+    "description": "Córdoba es una provincia en el centro de Argentina, conocida por su rica historia, paisajes variados y cultura diversa.",
+    "tourism": [
+        {
+        "name": "Sierras de Córdoba",
+        "description": "La región de las Sierras de Córdoba es famosa por su belleza natural, con una gran cantidad de cerros, quebradas y bosques.",
+        "image": "img/imagepng.webp"
+        },
+        {
+        "name": "Parque Nacional Quebrada del Condorito",
+        "description": "Hogar del majestuoso cóndor, este parque nacional ofrece vistas impresionantes de la Quebrada del Condorito, un cañón profundo.",
+        "image": "img/parque1.jpg"
+        },
+        {
+        "name": "Parque Nacional Traslasierra",
+        "description": "Ofrece una diversidad de paisajes, incluyendo montañas, ríos y selvas. También alberga el Cerro Champaquí, la montaña más alta de Córdoba.",
+        "image": "img/descarga.jpg"
+        },
+        {
+        "name": "Parque Nacional Cerro Colorado",
+        "description": "Ubicado en el noreste de la provincia, presenta una flora y fauna únicas, con suelos rojizos y senderos para explorar.",
+        "image": "img/Cerro-Colorado-2.webp"
+        },
+        {
+        "name": "Capilla del Monte",
+        "description": "Conocida por el Cerro Uritorco, un lugar de misticismo y senderismo, y por el Dique El Cajón, rodeado de montañas.",
+        "image": "img/calletechada.jpg"
+        },
+        {
+        "name": "Los Gigantes",
+        "description": "Un sistema de sierras y quebradas con imponentes formaciones rocosas, incluyendo el Cerro Champaquí y el Dique La Viña.",
+        "image": "img/1235222036_1390807941.webp"
+        },
+        {
+        "name": "Reserva Natural Chancaní",
+        "description": "Esta reserva ofrece una gran variedad de flora y fauna autóctonas, y oportunidades para practicar senderismo y observación de aves.",
+        "image": "img/chancani.jpg"
+        },
+        {
+        "name": "Dique Los Molinos",
+        "description": "Un embalse rodeado de colinas y montañas, es un lugar ideal para la práctica de deportes acuáticos y la pesca.",
+        "image": "img/diquelosmolinos.webp"
+        },
+        {
+        "name": "Valle de Calamuchita",
+        "description": "Un valle con ríos y lagos, rodeado de colinas, bosques y encantadores pueblos como Santa Rosa de Calamuchita y Villa General Belgrano.",
+        "image": "img/vallecalamuchita.jpg"
+        },
+        {
+        "name": "Dique La Falda",
+        "description": "Un embalse rodeado de montañas y vegetación, con playas y oportunidades para practicar deportes acuáticos.",
+        "image": "img/diquelafalda.jpg"
+        }
+    ]
+    },
+    {
+    "name": "Santa Fe",
+    "capital": "Santa Fe",
+    "population": "3,194,537",
+    "area": "133,007 km²",
+    "description": "Santa Fe es una provincia en el litoral de Argentina, conocida por su río Paraná y su importancia en la producción agrícola."
+    },
+    
+{
+    "name": "Buenos Aires",
+    "capital": "La Plata",
+    "population": "17,500,000",
+    "area": "307,571 km²",
+    "description":
+    "Buenos Aires es la provincia más poblada de Argentina y alberga la capital del país, Buenos Aires."
+},
+{
+    "name": "Mendoza",
+    "capital": "Mendoza",
+    "population": "1,741,610",
+    "area": "148,827 km²",
+    "description":
+    "Mendoza es conocida por su producción de vino y hermosos paisajes montañosos."
+},
+{
+    "name": "Tucumán",
+    "capital": "San Miguel de Tucumán",
+    "population": "1,448,188",
+    "area": "22,524 km²",
+    "description":
+    "Tucumán es la provincia más pequeña de Argentina y se la conoce como 'El Jardín de la República'."
+},
+{
+    "name": "Salta",
+    "capital": "Salta",
+    "population": "1,215,207",
+    "area": "155,488 km²",
+    "description":
+    "Salta es una provincia en el noroeste de Argentina, famosa por su rica herencia cultural y su belleza natural."
+},
+{
+    "name": "San Juan",
+    "capital": "San Juan",
+    "population": "681,055",
+    "area": "89,651 km²",
+    "description":
+    "San Juan es una provincia ubicada en la región cuyana, conocida por su producción agrícola y minera."
+},
+{
+    "name": "Entre Ríos",
+    "capital": "Paraná",
+    "population": "1,236,400",
+    "area": "78,781 km²",
+    "description":
+    "Entre Ríos se encuentra en la región mesopotámica, con paisajes que incluyen ríos y áreas naturales."
+        },
+        {
+        "name": "La Rioja",
+        "capital": "La Rioja",
+        "population": "333,642",
+        "area": "89,680 km²",
+        "description":
+        "La Rioja es una provincia en el oeste de Argentina, con paisajes desérticos y una rica historia."
+        },
+        {
+        "name": "Formosa",
+        "capital": "Formosa",
+        "population": "624,469",
+        "area": "72,066 km²",
+        "description": "Formosa se encuentra en la región del Gran Chaco, con selvas y humedales que la caracterizan."
+        },
+        {
+        "name": "Neuquén",
+        "capital": "Neuquén",
+        "population": "705,837",
+        "area": "94,078 km²",
+        "description": "Neuquén es una provincia en la Patagonia argentina, conocida por sus recursos naturales y paisajes montañosos."
+        },
+        {
+        "name": "Chubut",
+        "capital": "Rawson",
+        "population": "586,917",
+        "area": "224,686 km²",
+        "description": "Chubut es una provincia costera en la Patagonia, con una economía basada en la industria y la ganadería."
+        },
+        {
+        "name": "San Luis",
+        "capital": "San Luis",
+        "population": "431,588",
+        "area": "76,748 km²",
+        "description": "San Luis es una provincia en la región cuyana, conocida por su desarrollo sustentable y paisajes naturales."
+        },
+        {
+        "name": "Catamarca",
+        "capital": "San Fernando del Valle de Catamarca",
+        "population": "415,438",
+        "area": "102,602 km²",
+        "description": "Catamarca es una provincia en el noroeste argentino, con una economía basada en la minería y la agricultura."
+        },
+        {
+        "name": "Jujuy",
+        "capital": "San Salvador de Jujuy",
+        "population": "770,881",
+        "area": "53,219 km²",
+        "description": "Jujuy es una provincia en el norte de Argentina, conocida por su rica cultura y paisajes de montaña."
+        },
+        {
+        "name": "La Pampa",
+        "capital": "Santa Rosa",
+        "population": "318,951",
+        "area": "143,440 km²",
+        "description": "La Pampa es una provincia en el centro de Argentina, con vastas llanuras y una economía basada en la agricultura y la ganadería."
+        },
+        {
+        "name": "Chaco",
+        "capital": "Resistencia",
+        "population": "1,055,259",
+        "area": "99,633 km²",
+        "description": "Chaco se encuentra en la región del Gran Chaco, con selvas y humedales, y es una provincia con gran diversidad cultural."
+        },
+        {
+        "name": "Santiago del Estero",
+        "capital": "Santiago del Estero",
+        "population": "874,006",
+        "area": "136,351 km²",
+        "description": "Santiago del Estero es una provincia en el norte de Argentina, con una rica historia y paisajes naturales."
+        },
+        {
+        "name": "Corrientes",
+        "capital": "Corrientes",
+        "population": "992,595",
+        "area": "88,199 km²",
+        "description": "Corrientes es una provincia en el litoral argentino, con ríos y humedales, y es conocida por sus carnavales y tradiciones."
+        },
+        {
+        "name": "Misiones",
+        "capital": "Posadas",
+        "population": "1,101,593",
+        "area": "29,801 km²",
+        "description": "Misiones se encuentra en el noreste de Argentina, conocida por sus selvas tropicales y las Cataratas del Iguazú."
+        },
+        {
+        "name": "Ciudad de Buenos Aires",
+        "capital": "Buenos Aires",
+        "population": "2,890,151",
+        "area": "203 km²",
+        "description": "La Ciudad de Buenos Aires es la capital de Argentina y un importante centro cultural, político y económico."
+        },
+        {
+        "name": "Tierra del Fuego",
+        "capital": "Ushuaia",
+        "population": "173,432",
+        "area": "21,263 km²",
+        "description": "Tierra del Fuego es la provincia más austral de Argentina, conocida por su belleza natural y paisajes únicos."
+        },
+        {
+        "name": "Río Negro",
+        "capital": "Viedma",
+        "population": "747,610",
+        "area": "203,013 km²",
+        "description": "Río Negro se encuentra en la Patagonia argentina, con una economía diversa y paisajes naturales impresionantes."
+        },
+        {
+        "name": "Santa Cruz",
+        "capital": "Río Gallegos",
+        "population": "374,756",
+        "area": "243,943 km²",
+        "description": "Santa Cruz es una provincia en la Patagonia argentina, con vastas extensiones de tierra y belleza natural impresionante."
+        }
+    ]
+    
