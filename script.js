@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", async function () {
 
   provinces.forEach((province) => {
     province.addEventListener("click", async () => {
-      provinces.forEach((p) => p.classList.remove("active"));
-      province.classList.add("active");
+      provinces.forEach((p) => p.classList.remove("active")); // Remover la clase "active" de todas las provincias
+      province.classList.add("active"); // Agregar la clase "active" a la provincia actual
 
       const provinceName = province.getAttribute("id");
       const selectedProvince = getProvinceData(provinceName);

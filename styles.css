@@ -1,11 +1,15 @@
 body {
-  background-color: #76abb4;
+  background-image: url(./img/arg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .map-container {
-  width: 400px;
-  margin: 20px;
-  overflow: hidden; /* Evita que el mapa sobresalga del contenedor */
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 svg {
@@ -14,82 +18,18 @@ svg {
 }
 
 #info-container {
-  background-color: white;
-  padding: 20px;
-  height: 100%;
-}
-
-path {
-  fill: #e0e0e0;
-  stroke: #888;
-  stroke-width: 5;
-  cursor: pointer;
-}
-
-path.active {
-  fill: rgb(210, 215, 41);
-}
-
-/* Estilos para la tabla */
-#sortedProvinces {
-  display: none;
-  border: 1px solid #ccc;
-  padding: 5px;
-  margin: 40px auto;
-  max-width: 100%;
-  font-size: 14px;
-  background-color: rgba(255, 255, 255, 0.9);
-}
-
-.sorted-province {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 5px;
-  border-bottom: 1px solid #ccc;
-}
-
-/* Estilos para pantalla pequeña */
-@media screen and (max-width: 900px) {
-  #sortedProvinces {
-    max-width: 100%;
-    margin: 5px;
-  }
-
-  .sorted-province {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 5px 0;
-  }
-
-  .sorted-province h3,
-  .sorted-province p {
-    margin: 3px 0;
-  }
-}
-
-/* Estilo para el fondo de la página */
-body {
-  background-image: url(./img/arg.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-/* Estilo para el contenedor de la información de la provincia */
-#info-container {
-  background-color: rgba(255, 255, 255, 0.7); /* Fondo semitransparente */
+  background-color: rgba(54, 144, 192, 0.1);
   padding: 20px;
   border-radius: 10px;
-  width: 100%; /* Ajusta el ancho al 100% */
-  max-width: 100%; /* Establece el ancho máximo */
-  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5); /* Sombra suave */
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
+/* Estilo para el contenedor de la tabla */
 .table-container {
-  max-height: 400px; /* Altura máxima del contenedor */
-  overflow-y:auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
+  max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
   border: 1px solid #ddd; /* Agregar un borde al contenedor */
   border-radius: 10px; /* Añadir esquinas redondeadas al contenedor */
   padding: 10px; /* Espaciado interno */
@@ -97,6 +37,8 @@ body {
   display: flex; /* Usamos flexbox para centrar verticalmente */
   justify-content: center; /* Centra horizontalmente */
   align-items: center; /* Centra verticalmente */
+  background-color: rgba(203, 224, 235, 0.3);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 /* Estilo para la tabla dentro del contenedor */
@@ -108,7 +50,7 @@ body {
 /* Estilo para las celdas de la tabla */
 .table-container td,
 .table-container th {
-  padding: 8px; /* Espaciado interno de las celdas */
+  padding: 10px; /* Espaciado interno de las celdas */
   border: 1px solid #ddd; /* Agregar bordes a las celdas */
 }
 
@@ -125,48 +67,38 @@ body {
   }
 }
 
-/* Estilo para los botones de ordenamiento */
-.sort-buttons {
-  margin-top: 10px;
-}
-
-/* Estilo específico para los botones */
-.btn-primary {
-  margin-right: 5px;
-}
-/* Ajustar tamaños en pantallas medianas */
 @media screen and (max-width: 992px) {
   .col-md-4 {
-    width: 33.33%; /* Mantener tres columnas en pantallas medianas */
+    width: 33.33%;
     padding: 10px;
   }
 }
 
-/* Ajustar tamaños en pantallas pequeñas */
 @media screen and (max-width: 768px) {
   .col-sm-4 {
-    width: 50%; /* Mantener dos columnas en pantallas pequeñas */
+    width: 50%;
     padding: 10px;
   }
 }
-/* Centrar el título en dispositivos pequeños y medianos */
+
 #info-container h2 {
   text-align: center;
 }
 
-/* Estilo para los botones de ordenamiento */
 .sort-buttons {
   margin-top: 10px;
-  text-align: center; /* Centrar los botones */
+  text-align: center;
 }
+
 .province-box {
-  text-align: center; /* Centrar el contenido */
+  text-align: center;
   padding: 10px;
+  
 }
 
 .province-box img {
-  max-width: 100%; /* Asegurar que la imagen no sobrepase su contenedor */
-  height: auto; /* Mantener la proporción de la imagen */
+  max-width: 100%;
+  height: auto;
 }
 
 .province-box h2 {
@@ -177,32 +109,38 @@ body {
   margin: 5px 0;
 }
 
-
-
-
-
-
-
 /* Estilos para la sección de turismo */
 .tourism-section {
-  background-color: rgba(255, 255, 255, 0.9); /* Fondo ligeramente transparente */
+  background-color: rgba(54, 144, 192, 0.1);
   padding: 20px;
-  margin: 20px auto; /* Centrado al medio y margen con lo de arriba */
+  margin: 20px auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.tourism-entry {
+.tourism-entries {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tourism-entry {
+  flex: 0 0 calc(50% - 10px);
   margin-bottom: 20px;
   text-align: center;
 }
 
+.tourism-entry p {
+  width: 100%;
+  max-width: 100%;
+  font-style: italic;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
 .tourism-entry img {
-  width: 700px; /* Ancho mayor para las imágenes */
-  height: auto; /* La altura se ajustará automáticamente según el aspecto original */
+  width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
@@ -244,4 +182,37 @@ h3 {
 
 .btn:hover {
   background-color: #0056b3;
+}
+
+.tourism-entry img {
+  transition: opacity 0.3s ease;
+}
+
+.tourism-entry img:hover {
+  opacity: 0.7;
+}
+
+path.active {
+  fill: yellow; /* Cambia el color de fondo a amarillo o el que desees */
+}
+
+.centrar {
+  margin-top: 100px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .tourism-entry {
+    flex: 0 0 100%;
+  }
+}
+
+.tourism-description h4 {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.swal2-popup {
+  opacity: 0.8; /* Ajusta el valor de opacidad según tu preferencia (0.9 significa 90%) */
 }
