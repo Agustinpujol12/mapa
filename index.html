@@ -84,26 +84,28 @@
       </div>
   </div>
   
-  <div class="col-lg-4 col-sm-6 centrar">
-    <div class="button-container">
-      <button id="deleteTableBtn" class="btn btn-primary">Eliminar tabla</button>
-    </div>
-    <!-- Mueve los botones de ordenamiento aquí -->
-    <div class="sort-buttons">
-      <button id="sortByPopulationBtn" class="btn btn-primary">Ordenar por población</button>
-      <button id="sortByAreaBtn" class="btn btn-primary">Ordenar por Área</button>
-    </div>
-  
-  <div id="sortedProvinces" class="table-container">
-    <!-- Contenido de la tabla ordenada -->
-  </div>
+  <div id="provincesTableContainer" class="col-lg-4 col-sm-6 centrar table-container">
+    <h1>Tabla de Provincias</h1>
+    <table class="table table-striped" id="provincesTable">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th><a href="#" id="sortPopulation">Población</a></th>
+          <th><a href="#" id="sortArea">Área</a></th>
+      </tr>
+  </thead>
+        <tbody></tbody>
+    </table>
 </div>
-<div id="tourismSection" class="tourism-section" style="display: none;">
-  <h2>Lugares turísticos</h2>
+  <div id="tourismSection" class="tourism-section" style="display: none;">
+  <h2>LUGARES TURÍSTICOS</h2>
   <div id="tourismEntries" class="tourism-entries">
     <!-- Aquí se mostrarán las entradas de turismo -->
   </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
 

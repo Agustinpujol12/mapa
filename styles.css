@@ -26,33 +26,6 @@ svg {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-/* Estilo para el contenedor de la tabla */
-.table-container {
-  max-height: 700px; /* Ajusta la altura máxima según tus necesidades */
-  overflow-y: auto; /* Habilitar el scroll vertical cuando el contenido es demasiado largo */
-  border: 1px solid #ddd; /* Agregar un borde al contenedor */
-  border-radius: 10px; /* Añadir esquinas redondeadas al contenedor */
-  padding: 10px; /* Espaciado interno */
-  margin-top: 20px; /* Margen superior */
-  display: flex; /* Usamos flexbox para centrar verticalmente */
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  background-color: rgba(203, 224, 235, 0.3);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-}
-
-/* Estilo para la tabla dentro del contenedor */
-.table-container table {
-  width: 100%; /* Ocupar todo el ancho disponible */
-  border-collapse: collapse; /* Colapsar los bordes de las celdas */
-}
-
-/* Estilo para las celdas de la tabla */
-.table-container td,
-.table-container th {
-  padding: 10px; /* Espaciado interno de las celdas */
-  border: 1px solid #ddd; /* Agregar bordes a las celdas */
-}
 
 /* Estilos para las columnas */
 .col-lg-4 {
@@ -138,9 +111,11 @@ svg {
   margin-bottom: 50px;
 }
 
+/* Estilos para las imágenes de turismo */
 .tourism-entry img {
-  width: 100%;
-  height: auto;
+  width: 800px; /* Establece el ancho deseado */
+  height: 500px; /* Establece la altura deseada */
+  object-fit: cover; /* Escala la imagen para llenar el contenedor manteniendo la relación de aspecto */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 10px;
@@ -207,6 +182,14 @@ path.active {
     flex: 0 0 100%;
   }
 }
+/* Estilos para hacerlo responsivo */
+@media screen and (max-width: 768px) {
+  .tourism-entry img {
+    width: 100%; /* Ajustar el ancho al 100% en pantallas más pequeñas */
+    height: auto; /* La altura se ajustará automáticamente según el aspecto original */
+    max-width: 800px; /* Establecer un ancho máximo para evitar que se agrande demasiado */
+  }
+}
 
 .tourism-description h4 {
   font-weight: bold;
@@ -215,4 +198,178 @@ path.active {
 
 .swal2-popup {
   opacity: 0.8; /* Ajusta el valor de opacidad según tu preferencia (0.9 significa 90%) */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilos para la sección de turismo */
+.tourism-section {
+  text-align: center; /* Centrar el contenido horizontalmente */
+}
+
+/* Estilos para el título "LUGARES TURÍSTICOS" */
+.tourism-section h2 {
+  font-size: 62px; /* Tamaño de letra inicial */
+  margin-bottom: 75px;
+  animation: colorCycle 5s linear infinite, fadeIn 1s ease; /* Animación de cambio de color y desvanecimiento */
+
+  /* Añadir reglas de prefijo para navegadores */
+  -webkit-font-size: 36px;
+  -moz-font-size: 36px;
+  -ms-font-size: 36px;
+  -o-font-size: 36px;
+}
+
+/* Animación de cambio de color */
+@keyframes colorCycle {
+  0% {
+    color: #fff; /* Blanco */
+  }
+  33% {
+    color: #ffeb3b; /* Amarillo */
+  }
+  66% {
+    color: #007bff; /* Azul */
+  }
+  100% {
+    color: #fff; /* Blanco */
+  }
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para el contenedor de la tabla */
+#provincesTableContainer {
+  max-height: 600px; /* Ajusta la altura máxima según tus necesidades */
+  overflow-y: auto; /* Activar el scroll vertical */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 165px; /* Ajusta el margen superior según tus necesidades */
+  margin-bottom: 20px; /* Añade un margen inferior */
+  border-radius: 10px; /* Esquinas redondeadas */
+  position: relative;
+}
+
+/* Estilo para la tabla de provincias */
+#provincesTable {
+  width: 100%; /* Ancho al 100% para adaptarse al contenedor */
+  font-size: 20px; /* Aumenta el tamaño de fuente de la tabla */
+}
+
+/* Estilo para las celdas de encabezado */
+#provincesTable th {
+  /* ... tus estilos actuales ... */
+  font-size: 22px; /* Aumenta el tamaño de fuente del encabezado */
+  padding: 12px; /* Ajustar el espaciado interno del encabezado */
+}
+
+/* Estilo para las celdas de datos */
+#provincesTable td {
+  /* ... tus estilos actuales ... */
+  font-size: 20px; /* Aumenta el tamaño de fuente de las celdas de datos */
+  padding: 10px; /* Ajustar el espaciado interno de las celdas de datos */
+}
+
+
+/* Estilo para las filas de la tabla */
+#provincesTable tbody tr {
+  background-color: rgba(203, 224, 235, 0.6); /* Fondo de las filas */
+  color: #333; /* Color de texto */
+}
+
+
+/* Estilo para el encabezado de la tabla */
+#provincesTable thead {
+  top: 0;
+  background-color: rgba(203, 224, 235, 0.9); /* Color de fondo del encabezado */
+  z-index: 2; /* Asegura que el encabezado esté por encima del contenido de la tabla */
+}
+
+/* Estilo para las filas pares */
+#provincesTable tbody tr:nth-child(even) {
+  background-color: rgba(203, 224, 235, 0.8); /* Fondo de las filas pares */
+}
+
+/* Estilo para las filas impares */
+#provincesTable tbody tr:nth-child(odd) {
+  background-color: rgba(203, 224, 235, 0.6); /* Fondo de las filas impares */
+}
+
+/* Estilo para las filas al pasar el cursor */
+#provincesTable tbody tr:hover {
+  background-color: #66a2d7; /* Fondo al pasar el cursor */
+  color: #fff; /* Color de texto al pasar el cursor */
+  cursor: pointer; /* Cambio de cursor al pasar por encima */
+}
+
+/* Estilo para la barra de desplazamiento en navegadores WebKit (Chrome y Safari) */
+#provincesTable::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Estilo para el pulgar de la barra de desplazamiento en navegadores WebKit */
+#provincesTable::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Color del pulgar de la barra de desplazamiento */
+  border-radius: 5px; /* Esquinas redondeadas del pulgar */
+}
+
+/* Estilo para la pista de la barra de desplazamiento en navegadores WebKit */
+#provincesTable::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0.1); /* Color de fondo de la barra de desplazamiento */
+}
+
+/* Estilo para el encabezado de la tabla */
+#tableHeader {
+  background-color: rgba(203, 224, 235, 0.9); /* Color de fondo del encabezado */
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Asegura que el encabezado esté por encima del contenido de la tabla */
+}
+/* Estilo para el contenedor de la tabla */
+#tableContainer {
+  max-height: 500px; /* Establece la altura máxima */
+  overflow-y: auto; /* Activar el scroll vertical */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 110px; /* Ajusta según tus necesidades */
+  border-radius: 10px; /* Esquinas redondeadas */
+  position: relative; /* Permite que el encabezado sea relativo a este contenedor */
+}
+
+#provincesTable th a {
+  text-decoration: none; /* Quitar el subrayado */
+  color: #333; /* Cambiar el color de los enlaces (puedes ajustar el color según tus preferencias) */
+  transition: font-size 0.3s, background-color 0.3s; /* Agregar una transición suave para los cambios */
+}
+
+#provincesTable th a:hover {
+  font-size: 24px; /* Aumentar el tamaño de fuente al pasar el cursor (ajusta según tus preferencias) */
+  background-color: yellow; /* Cambiar el color de fondo al pasar el cursor (ajusta según tus preferencias) */
 }
