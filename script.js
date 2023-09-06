@@ -154,12 +154,14 @@ function sortTableByColumn(column, ascending) {
     displayProvinces(provincesData);
 }
 
-sortPopulationLink.addEventListener('click', function () {
+sortPopulationLink.addEventListener('click', function (e) {
+    e.preventDefault(); // Evita el comportamiento predeterminado del enlace
     sortByPopulationAsc = !sortByPopulationAsc;
     sortTableByColumn('population', sortByPopulationAsc);
 });
 
-sortAreaLink.addEventListener('click', function () {
+sortAreaLink.addEventListener('click', function (e) {
+    e.preventDefault(); // Evita el comportamiento predeterminado del enlace
     sortByAreaAsc = !sortByAreaAsc;
     sortTableByColumn('area', sortByAreaAsc);
 });

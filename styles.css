@@ -276,6 +276,7 @@ path.active {
   margin-bottom: 20px; /* Añade un margen inferior */
   border-radius: 10px; /* Esquinas redondeadas */
   position: relative;
+  padding-top: 40px; /* Agrega espacio para el título */
 }
 
 /* Estilo para la tabla de provincias */
@@ -346,12 +347,13 @@ path.active {
   background-color: rgba(0, 0, 0, 0.1); /* Color de fondo de la barra de desplazamiento */
 }
 
-/* Estilo para el encabezado de la tabla */
+/* Estilo para el título de la tabla */
 #tableHeader {
   background-color: rgba(203, 224, 235, 0.9); /* Color de fondo del encabezado */
   position: sticky;
   top: 0;
   z-index: 1; /* Asegura que el encabezado esté por encima del contenido de la tabla */
+  padding: 10px 0; /* Espaciado interno superior e inferior del título */
 }
 /* Estilo para el contenedor de la tabla */
 #tableContainer {
@@ -373,3 +375,4 @@ path.active {
   font-size: 24px; /* Aumentar el tamaño de fuente al pasar el cursor (ajusta según tus preferencias) */
   background-color: yellow; /* Cambiar el color de fondo al pasar el cursor (ajusta según tus preferencias) */
 }
+
